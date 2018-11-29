@@ -5,18 +5,18 @@
 
 let destroyer = (arr, ...nums) => {
   let obj = {};
-  let narr = [];
+  let newArr = [];
   for (let i = 0; i < nums.length; i++){
     obj[nums[i]] = true;
   }
 
   for (let i = 0; i < arr.length; i++) {
      if (!obj[arr[i]]) {
-       narr.push(arr[i]);
+       newArr.push(arr[i]);
      }
   }
 
-  return narr;
+  return newArr;
 
 }
 
