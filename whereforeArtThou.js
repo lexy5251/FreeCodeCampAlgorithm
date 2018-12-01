@@ -4,7 +4,9 @@
 
 let whatIsInAName = (collection, source) => {
   let sourceKeys = Object.keys(source);
+  console.log("sourceKeys are: ",sourceKeys);
   return collection.filter(function(obj) {
+    console.log("obj in function as argument is: ", obj);
     for (let i = 0; i < sourceKeys.length; i++) {
       if (!obj.hasOwnProperty(sourceKeys[i]) || obj[sourceKeys[i]] !== source[sourceKeys[i]]) {
         return false;
