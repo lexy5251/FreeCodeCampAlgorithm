@@ -12,7 +12,7 @@ function same(array1, array2){
     if (squaredIndex === -1) {
       return false;
     }
-    array2.splice(squaredIndex, 1);
+    array2.slice(squaredIndex, 1);
   }
   return true;
 }
